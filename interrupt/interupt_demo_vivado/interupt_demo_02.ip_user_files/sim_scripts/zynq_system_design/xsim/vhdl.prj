@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/zynq_system_design/ip/zynq_system_design_axi_gpio_0_0/sim/zynq_system_design_axi_gpio_0_0.vhd" \
+"../../../bd/zynq_system_design/ip/zynq_system_design_axi_gpio_1_0/sim/zynq_system_design_axi_gpio_1_0.vhd" \
+"../../../bd/zynq_system_design/ip/zynq_system_design_rst_ps7_0_100M_0/sim/zynq_system_design_rst_ps7_0_100M_0.vhd" \
+
+nosort

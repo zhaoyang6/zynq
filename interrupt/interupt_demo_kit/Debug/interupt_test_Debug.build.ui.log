@@ -1,0 +1,25 @@
+2019-11-21T16:29:50.756786300255-16:29:50 **** Incremental Build of configuration Debug for project interupt_test ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/key_interupt.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/key_interupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/vivado_project/sdk_demo_01/interupt_demo/export/interupt_demo/sw/interupt_demo/standalone_domain/bspinclude/include -MMD -MP -MF"src/key_interupt.d" -MT"src/key_interupt.o" -o "src/key_interupt.o" "../src/key_interupt.c"
+000-'Finished building: ../src/key_interupt.c'
+000-' '
+000-'Building target: interupt_test.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/vivado_project/sdk_demo_01/interupt_demo/export/interupt_demo/sw/interupt_demo/standalone_domain/bsplib/lib -o "interupt_test.elf"  ./src/key_interupt.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: interupt_test.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size interupt_test.elf  |tee "interupt_test.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  63096	   3392	  23376	  89864	  15f08	interupt_test.elf
+000-'Finished building: interupt_test.elf.size'
+000-' '
+00255-
+16:29:52 Build Finished (took 1s.337ms)
+
